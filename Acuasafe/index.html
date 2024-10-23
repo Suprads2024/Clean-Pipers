@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Clean Pipers</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="assets/images/Logo/Logo Vertical.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.flaticon.com/css/flaticon.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="assets/css/font-awesome-all.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/owl.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <link href="assets/css/color.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/996b34cf47.js" crossorigin="anonymous"></script>
+</head>
+
+
+<!-- page wrapper -->
+
+<body>
+
+    <div class="boxed_wrapper">
+
+
+        <!-- preloader -->
+        <div class="loader-wrap" >
+            <div class="preloader">
+                <div class="preloader-close">Preloader Close</div>
+                <div id="handle-preloader" class="handle-preloader">
+                    <div class="animation-preloader">
+                        <div class="spinner"></div>
+                        <div class="txt-loading">
+                            <span data-text-preloader="c" class="letters-loading">
+                                c
+                            </span>
+                            <span data-text-preloader="l" class="letters-loading">
+                                l
+                            </span>
+                            <span data-text-preloader="e" class="letters-loading">
+                                e
+                            </span>
+                            <span data-text-preloader="a" class="letters-loading">
+                                a
+                            </span>
+                            <span data-text-preloader="n" class="letters-loading">
+                                n
+                            </span>
+                            <span data-text-preloader="&nbsp;" class="letters-loading">
+                                &nbsp;
+                            </span>
+                            <span data-text-preloader="p" class="letters-loading"
+                                style="font-family: 'Archivo_Condensed-Regular';">
+                                p
+                            </span>
+                            <span data-text-preloader="i" class="letters-loading"
+                                style="font-family: 'Archivo_Condensed-Regular';">
+                                i
+                            </span>
+                            <span data-text-preloader="p" class="letters-loading"
+                                style="font-family: 'Archivo_Condensed-Regular';">
+                                p
+                            </span>
+                            <span data-text-preloader="e" class="letters-loading"
+                                style="font-family: 'Archivo_Condensed-Regular';">
+                                e
+                            </span>
+                            <span data-text-preloader="s" class="letters-loading"
+                                style="font-family: 'Archivo_Condensed-Regular';">
+                                s
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader end -->
+
+
+        <!-- main header -->
+      <!-- main header -->
+<header class="main-header" >
+    <!-- header-lower -->
+    <div class="header-lower">
+        <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+        <div class="outer-box">
+            <div class="logo-box">
+                <figure class="logo"><a href="./"><img src="assets/images/Logo/Logo Horizontal.png" alt="Logo"></a></figure>
+            </div>
+            <div class="menu-area clearfix">
+                <!--Mobile Navigation Toggler-->
+                <div class="mobile-nav-toggler">
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                </div>
+                
+                <nav class="main-menu navbar-expand-md navbar-light">
+                    
+                    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                        <ul class="navigation clearfix">
+                            <li><a href=""> <span> <i class="fas fa-phone-alt"></i> Urgencias: <strong>11 3035-4095</strong></span></a></li>
+                            <li><a href="#top">Inicio</a></li>
+                            <li><a href="#services">Servicios</a></li>
+                            <li><a href="#about">Sobre Nosotros</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+              
+            </div>
+        </div>
+    </div>
+</header>
+<script>// Esperar a que la página cargue
+    window.addEventListener('scroll', function () {
+        var header = document.querySelector('.main-header');
+        var shape = document.querySelector('.shape');
+        var sticky = header.offsetTop;
+    
+        // Mostrar barra de navegación fija
+        if (window.pageYOffset > sticky) {
+            header.classList.add('fixed-header');
+            shape.classList.add('hide-shape'); // Ocultar la imagen al hacer scroll
+        } else {
+            header.classList.remove('fixed-header');
+            shape.classList.remove('hide-shape'); // Mostrar la imagen cuando se sube
+        }
+    });
+    
+    </script>
+    <script>
+        // Esperar a que la página cargue
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const headerOffset = 100; // El margen superior de 100px
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+    </script>
+
+<div class="whatsapp-button2">
+    <a href="https://wa.me/+541130354095?text=." target="_blank">
+      <img src="assets/images/whatsapp.png" alt="WhatsApp">
+    </a>
+  </div>
+
+
+        <!-- main-header end -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu" >
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/Logo/Logo Horizontal.png" alt=""
+                            title=""></a>
+                </div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="contact-info">
+                    <h4>Info</h4>
+                    <ul>
+                        <li> Avenida 9 de Julio, Buenos Aires</li>
+                        <li><a href=""> 000 - 1234123 / 0000 21 8888</a></li>
+                        <li><a href="mailto:info@example.com">info@mymail.com</a></li>
+                    </ul>
+                </div>
+            
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+
+        <!-- primer slaider 1 -->
+        <section class="banner-section">
+            <div class="shape" style="background-image: url(assets/images/shape/banner-shap.png);"></div>
+            <div class="banner-carousel owl-theme owl-carousel owl-nav-none owl-dots-none">
+                <div class="">
+                    <div class="pattern-box">
+
+                        <div class="pattern-3" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                    </div>
+                    <div class="auto-container">
+                        <div class="inner-box">
+                            <div class="image-box">
+
+                                <figure class="image image-2"><img src="assets/images/banner/vector-2.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="content-box">
+                                <h2>SERVICIOS</h2>
+                                <p>Limpieza de cañerías · Pluviales · Acometidas domiciliarias · Acequias · Redes
+                                    secundarias.</p>
+                                <div class="btn-box clearfix">
+                                    <a href="" class="theme-btn btn-one">WhatsApp</a>
+                                    <a href="#contact" class="theme-btn banner-btn">Contacto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- banner-section end -->
+
+        <!-- feature-section -->
+        <section class="feature-section centred" id="services">
+            <div class="auto-container">
+                <div class="inner-container wow fadeInLeft animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="title-text">
+                        <h2>Nuestros Servicios</h2>
+                    </div>
+                    <div class="row justify-content-center clearfix">
+                        <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                            <div class="feature-block-one">
+                                <div class="inner-box">
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);">
+                                    </div>
+                                    <div class="icon-box"><i class="flaticon-water-drop-1"></i></div>
+                                    <h4>Servicio de Destapaciones</h4>
+                                    <p>Destapaciones en San Isidro, Martinez, Olivos, Vicente Lopez, Villa Adelina,
+                                        Beccar, Acassuso, La Florida, Boulogne, Tigre, Benavidez, Nordelta, Islas del
+                                        delta, y muchos barrios más.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                            <div class="feature-block-one">
+                                <div class="inner-box">
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);">
+                                    </div>
+                                    <div class="icon-box"><i class="flaticon-recycle"></i></div>
+                                    <h4>Destapaciones con máquina</h4>
+                                    <p>Trabajamos con máquina eléctrica de 1 hp con resortes acerados con diferentes
+                                        elementos para desobstruir cañerías con raíces, grasa y papel entre otras cosas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                            <div class="feature-block-one">
+                                <div class="inner-box">
+                                    <div class="icon-box"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                    <h4>Destapaciones de urgencia las 24 horas</h4>
+                                    <p>Líderes en el servicio de destapaciones de cañerías pluviales y cloacales.
+                                        Destapaciones de urgencia en zona norte.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- feature-section end -->
+
+
+        <!-- about-section -->
+        <section class="about-section" id="about">
+            <div class="auto-container">
+                <div class="row d-flex align-items-start clearfix">
+                    <!-- Columna izquierda -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                        <div class="content_block_1 h-100 d-flex flex-column">
+                            <div class="content-box wow fadeInRight animated" data-wow-delay="00ms"
+                                data-wow-duration="1500ms">
+                                <div class="sec-title">
+                                    <h2>Sobre Nosotros</h2>
+                                </div>
+                                <div class="text">
+                                    <p>Clean Pipe Solutions es una empresa líder en el sector de servicios de limpieza y
+                                        mantenimiento de tuberías, especializada en ofrecer soluciones integrales para
+                                        la desobstrucción y limpieza de conductos utilizando tecnología de punta. Con un
+                                        enfoque en la eficiencia y la calidad, nuestra empresa se destaca por el uso de
+                                        maquinaria avanzada y camiones equipados específicamente para el manejo de todo
+                                        tipo de obstrucciones y limpiezas profundas.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha (ajustando margen superior solo en pantallas grandes) -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 content-column mt-lg-4 mt-0">
+                        <div class="content_block_2 h-100 d-flex flex-column">
+                            <div class="content-box wow fadeInRight animated" data-wow-delay="00ms"
+                                data-wow-duration="1500ms">
+                                <div class="text">
+                                    <p>Nuestro equipo de profesionales altamente capacitados está comprometido con la
+                                        excelencia en el servicio, asegurando intervenciones rápidas, efectivas y
+                                        mínimamente invasivas. Entendemos la importancia de mantener en funcionamiento
+                                        las tuberías sin interrupciones, por lo que ofrecemos respuestas rápidas y
+                                        soluciones duraderas en instalaciones de cualquier tipo, ya sean residenciales,
+                                        comerciales o industriales.</p>
+                                </div>
+                                <div class="btn-box mt-auto">
+                                    <a href="about.html" class="theme-btn btn-one" style="margin-top: 50px;">Leer
+                                        más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- about-section end -->
+
+
+
+
+        <!-- chooseus-section -->
+        <section class="chooseus-section">
+            <div class="bg-layer" style="background-image: url(assets/images/shape/shape-26.png);"></div>
+            <div class="shape-layer">
+                <div class="shape-1" style="background-image: url(assets/images/shape/shape-6.png);"></div>
+                <div class="shape-2"></div>
+                <div class="shape-3"></div>
+                <div class="shape-4" style="background-image: url(assets/images/shape/shape-32.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                        <div class="content_block_2">
+                            <div class="content-box">
+                                <div class="sec-title light">
+                                    <h2>Un titulo llamativo de lo que hace esa maquina</h2>
+                                </div>
+                                <div class="inner-box">
+                                    <div class="single-item">
+                                        <div class="icon-box"><i class="flaticon-draw-check-mark"></i></div>
+                                        <div class="text">
+                                            <h4>Titulo</h4>
+                                            <p>Lorem ipsum dolor amet consectetur adipisicing sed do eiusmod tempor
+                                                incididunt labore.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-item">
+                                        <div class="icon-box"><i class="flaticon-draw-check-mark"></i></div>
+                                        <div class="text">
+                                            <h4>Titulo</h4>
+                                            <p>Lorem ipsum dolor amet consectetur adipisicing sed do eiusmod tempor
+                                                incididunt labore.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                        <div class="image-box wow fadeInRight animated" data-wow-delay="00ms"
+                            data-wow-duration="1500ms">
+                            <figure class="image"><img src="assets/images/WhatsApp Image 2024-07-29 at 13.35.17.jpeg" alt=""></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- chooseus-section end -->
+
+
+        <!-- shop-section -->
+        <section class="shop-section centred">
+            <div class="auto-container">
+                <div class="sec-title">
+                    <h2>Mas de nuestros Servicios</h2>
+                </div>
+                <div class="row clearfix">
+                    <!-- Primera fila de 3 servicios -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/resource/close-up-of-professional-plumber-installs-a-siphon-2024-08-08-07-18-52-utc.jpg" alt=""></figure>
+                                <div class="lower-content">
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <h4>Destapación de cañerias</h4>
+                                    <p>Destapación de columnas de desague de cocinas, lavaderos y baños. Destapaciones de cañerías en hogares y cualquier lugar.</p>
+                                    <div class="btn-box">
+                                        <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/resource/male-plumber-hands-repairing-sink-in-bathroom-2023-11-27-05-30-39-utc.jpg" alt=""></figure>
+                                <div class="lower-content">
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <h4>Destapación de baños</h4>
+                                    <p>Destapaciones de baños e inodoros de baños, caños de desague de piletas del baño, lavamanos, bidets, bañeras y bañaderas.</p>
+                                    <div class="btn-box">
+                                        <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/resource/plumber-fixing-leaking-sink-2023-11-27-05-10-17-utc.jpg" alt=""></figure>
+                                <div class="lower-content">
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <h4>Destapación de cocinas</h4>
+                                    <p>Desobstrucción y destapaciones de caños de desague de cocinas y lavaderos, destapación de rejillas en cocinas, patios y lavaderos.</p>
+                                    <div class="btn-box">
+                                        <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Segunda fila de 3 servicios con margen superior diferente en PC y móvil -->
+                <div class="row clearfix mt-lg-5 mt-sm-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="900ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/resource/WhatsApp Image 2024-07-29 at 13.35.17 (1).jpeg" alt=""></figure>
+                                <div class="lower-content">
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <h4>Limpieza de cañerias</h4>
+                                    <p>Realizamos limpieza, desobstrucción y cepillado de cañerias, eliminación de obstrucciones en cañerías.</p>
+                                    <div class="btn-box">
+                                        <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="1200ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/resource/cleaning-the-sewer-system-special-equipment-utili-2023-11-27-05-22-33-utc.jpg" alt=""></figure>
+                                <div class="lower-content">
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <h4>Destapación de cloacas</h4>
+                                    <p>Realizamos destapaciones de cloacas, caños cloacales, cámaras de cloacas y columnas cloacales internas.</p>
+                                    <div class="btn-box">
+                                        <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="1500ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/resource/male-plumber-installing-heating-radiator-in-apartm-2023-11-27-05-31-44-utc.jpg" alt=""></figure>
+                                <div class="lower-content">
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <h4>Destapaciones de urgencia</h4>
+                                    <p>Destapaciones las 24 horas, los 365 días del año.</p>
+                                    <div class="btn-box">
+                                        <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+   
+        <!-- shop-section end -->
+
+
+        <!-- testimonial-section -->
+        <section class="testimonial-section bg-color-1">
+            <div class="shape-layer">
+                <div class="shape-1" style="background-image: url(assets/images/shape/shape-8.png);"></div>
+                <div class="shape-2" style="background-image: url(assets/images/shape/shape-9.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="sec-title">
+                    <h2>Comentario de <br> clientes satisfechos</h2>
+                </div>
+                <div class="two-column-carousel owl-carousel owl-theme owl-nav-none">
+                    <div class="testimonial-block-one">
+                        <div class="inner-box">
+                           
+                            
+                            <div class="inner">
+                                <ul class="rating clearfix">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
+                                    minim veniam.</p>
+                                <h5>Nombre y apellido</h5>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-block-one">
+                        <div class="inner-box">
+                           
+                            <div class="inner">
+                                <ul class="rating clearfix">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
+                                    minim veniam.</p>
+                                    <h5>Nombre y apellido</h5>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-block-one">
+                        <div class="inner-box">
+                            
+                            <div class="inner">
+                                <ul class="rating clearfix">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
+                                    minim veniam.</p>
+                                    <h5>Nombre y apellido</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-block-one">
+                        <div class="inner-box">
+                            
+                            <div class="inner">
+                                <ul class="rating clearfix">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
+                                    minim veniam.</p>
+                                    <h5>Nombre y apellido</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-block-one">
+                        <div class="inner-box">
+                          
+                            <div class="inner">
+                                <ul class="rating clearfix">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
+                                    minim veniam.</p>
+                                    <h5>Nombre y apellido</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-block-one">
+                        <div class="inner-box">
+                           
+                            <div class="inner">
+                                <ul class="rating clearfix">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
+                                    minim veniam.</p>
+                                    <h5>Nombre y apellido</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial-section end -->
+
+
+   
+   <!-- faq-page-section -->
+<section class="faq-page-section">
+    <div class="auto-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+                <div class="faq-content">
+                    <div class="sec-title text-center">
+                        <h2>Preguntas Frecuentes</h2>
+                    </div>
+                    <ul class="accordion-box">
+                        <li class="accordion block active-block">
+                            <div class="acc-btn active">
+                                <div class="icon-outer"><i class="fal fa-plus"></i></div>
+                                <h4>¿Qué servicios ofrecemos?</h4>
+                            </div>
+                            <div class="acc-content current">
+                                <div class="text">
+                                    <p>Ofrecemos los mejores servicios de destapaciones y plomería en toda Zona Norte, trabajando con maquinaria de última tecnología y con el mejor equipo de profesionales especializados en el rubro. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block">
+                            <div class="acc-btn">
+                                <div class="icon-outer"><i class="fal fa-plus"></i></div>
+                                <h4>¿Qué medios de pago aceptan?</h4>
+                            </div>
+                            <div class="acc-content">
+                                <div class="text">
+                                    <p>Aceptamos una gran variedad de medios de pago, desde efectivo y transferencia bancaria hasta MercadoPago. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block">
+                             <div class="acc-btn">
+                                <div class="icon-outer"><i class="fal fa-plus"></i></div>
+                                <h4>¿Cómo puedo solicitar un presupuesto?</h4>
+                            </div>
+                            <div class="acc-content">
+                                <div class="text">
+                                    <p>Nos pueden enviar mensaje por WhatsApp o mediante el Formulario de Contacto.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+
+    
+        <!-- contact-style-two -->
+        <section class="contact-style-two" id="contact">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-5 col-md-12 col-sm-12 info-column">
+                        <div class="info-inner">
+                            <div class="shape" style="background-image: url(assets/images/shape/shape-42.png);"></div>
+                            <h3>Contacto</h3>
+                            <ul class="info-list clearfix">
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h5>Ubicación</h5>
+                                    <p>asdas, asdas, CA <br />asdasdasd</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <h5>Email</h5>
+                                    <p><a href="mailto:info@example.com">info@example.com</a><br /><a href="mailto:information@gmail.com">information@gmail.com</a></p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <h5>Telefono</h5>
+                                    <p><a href="tel:11165458856">+(111) 65_458_856</a><br /><a href="tel:11165458857">+(111) 65_458_857</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12 form-column">
+                        <div class="form-inner">
+                            <h3>Contactate con nosotros</h3>
+                            <form method="post" action="sendemail.php" id="contact-form" class="default-form"> 
+                                <div class="row clearfix">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                        <input type="text" name="name" placeholder="nombre" required="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                                        <input type="email" name="email" placeholder="Email" required="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                                        <input type="text" name="phone" required="" placeholder="Telefono">
+                                    </div>
+                                   
+                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                        <textarea name="message" placeholder="Mensaje"></textarea>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
+                                        <button class="theme-btn btn-one" type="submit" name="submit-form">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- main-footer -->
+        <footer class="main-footer">
+            <div class="pattern-layer">
+                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-12.png);"></div>
+                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-13.png);"></div>
+                <div class="pattern-3" style="background-image: url(assets/images/shape/shape-14.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="footer-top clearfix">
+                    <div class="line-shape" style="background-image: url(assets/images/shape/shape-11.png);"></div>
+                    <div class="text pull-left">
+                        <h2>Ante cualquier consulta puede comunicarse  llamando al</h2>
+                    </div>
+                    <div class="support-box pull-right">
+                        <a href="tel:1141609950"><i class="fas fa-phone"></i>(11) 4160-9950</a>
+                    </div>
+                </div>
+                <div class="widget-section">
+                    <div class="row d-flex justify-content-between align-items-center clearfix">
+                        <!-- Logo y descripción a la izquierda -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget logo-widget">
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/Logo/Logo Horizontal.png" alt="Logo"></a></figure>
+                               
+                                <div class="schedule-box">
+                                    <h6>Horarios:</h6>
+                                    <ul class="list clearfix">
+                                        <li>Lunes - Sabados: 9AM - 6PM.</li>
+                                        <li>Domingo: Cerrado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Información de contacto a la derecha -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget contact-widget">
+                                <div class="widget-title">
+                                    <h4>Info</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="info-list clearfix">
+                                        <li><i class="fal fa-map-marker-alt"></i>Avenida 9 de Julio, Buenos Aires</li>
+                                        <li><i class="fal fa-phone"></i>Llamar: <a href="tel:3336660001">333-666-0001</a></li>
+                                        <li><i class="fal fa-envelope-open-text"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="bottom-inner">
+                        <div class="copyright">
+                            <p><a href="index.html"></a> Copyright &copy; 2024 CLEAN PIPE</p>
+                        </div>
+                     
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- main-footer end -->
+
+
+
+    </div>
+
+
+    <!-- jequery plugins -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <!-- main-js -->
+    <script src="assets/js/script.js"></script>
+
+</body><!-- End of .page_wrapper -->
+
+</html>
