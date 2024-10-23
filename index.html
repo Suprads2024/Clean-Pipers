@@ -41,7 +41,7 @@
 
 
         <!-- preloader -->
-        <div class="loader-wrap" >
+        <div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close">Preloader Close</div>
                 <div id="handle-preloader" class="handle-preloader">
@@ -96,92 +96,94 @@
 
 
         <!-- main header -->
-      <!-- main header -->
-<header class="main-header" >
-    <!-- header-lower -->
-    <div class="header-lower">
-        <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-        <div class="outer-box">
-            <div class="logo-box">
-                <figure class="logo"><a href="./"><img src="assets/images/Logo/Logo Horizontal.png" alt="Logo"></a></figure>
-            </div>
-            <div class="menu-area clearfix">
-                <!--Mobile Navigation Toggler-->
-                <div class="mobile-nav-toggler">
-                    <i class="icon-bar"></i>
-                    <i class="icon-bar"></i>
-                    <i class="icon-bar"></i>
-                </div>
-                
-                <nav class="main-menu navbar-expand-md navbar-light">
-                    
-                    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                        <ul class="navigation clearfix">
-                            <li><a href=""> <span> <i class="fas fa-phone-alt"></i> Urgencias: <strong>11 3035-4095</strong></span></a></li>
-                            <li><a href="#top">Inicio</a></li>
-                            <li><a href="#services">Servicios</a></li>
-                            <li><a href="#about">Sobre Nosotros</a></li>
-                            <li><a href="#contact">Contacto</a></li>
-                        </ul>
+        <!-- main header -->
+        <header class="main-header">
+            <!-- header-lower -->
+            <div class="header-lower">
+                <!-- <div class="shape" style="background-image: url(assets/images/shape/shape-4.png);"></div> -->
+                <div class="outer-box">
+                    <div class="logo-box">
+                        <figure class="logo"><a href="./"><img src="assets/images/Logo/Logo Horizontal.png"
+                                    alt="Logo"></a></figure>
                     </div>
-                </nav>
-              
+                    <div class="menu-area clearfix">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </div>
+
+                        <nav class="main-menu navbar-expand-md navbar-light">
+
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li><a href=""> <span> <i class="fas fa-phone-alt"></i> Urgencias: <strong>11
+                                                    3035-4095</strong></span></a></li>
+                                    <li><a href="#top">Inicio</a></li>
+                                    <li><a href="#services">Servicios</a></li>
+                                    <li><a href="#about">Sobre Nosotros</a></li>
+                                    <li><a href="#contact">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
-<script>// Esperar a que la página cargue
-    window.addEventListener('scroll', function () {
-        var header = document.querySelector('.main-header');
-        var shape = document.querySelector('.shape');
-        var sticky = header.offsetTop;
-    
-        // Mostrar barra de navegación fija
-        if (window.pageYOffset > sticky) {
-            header.classList.add('fixed-header');
-            shape.classList.add('hide-shape'); // Ocultar la imagen al hacer scroll
-        } else {
-            header.classList.remove('fixed-header');
-            shape.classList.remove('hide-shape'); // Mostrar la imagen cuando se sube
-        }
-    });
-    
-    </script>
-    <script>
-        // Esperar a que la página cargue
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+        </header>
+        <script>// Esperar a que la página cargue
+            window.addEventListener('scroll', function () {
+                var header = document.querySelector('.main-header');
+                var shape = document.querySelector('.shape');
+                var sticky = header.offsetTop;
 
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            const headerOffset = 100; // El margen superior de 100px
-            const elementPosition = targetElement.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
+                // Mostrar barra de navegación fija
+                if (window.pageYOffset > sticky) {
+                    header.classList.add('fixed-header');
+                    shape.classList.add('hide-shape'); // Ocultar la imagen al hacer scroll
+                } else {
+                    header.classList.remove('fixed-header');
+                    shape.classList.remove('hide-shape'); // Mostrar la imagen cuando se sube
+                }
             });
-        }
-    });
-});
 
-    </script>
+        </script>
+        <script>
+            // Esperar a que la página cargue
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
 
-<div class="whatsapp-button2">
-    <a href="https://wa.me/+541130354095?text=." target="_blank">
-      <img src="assets/images/whatsapp.png" alt="WhatsApp">
-    </a>
-  </div>
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const headerOffset = 100; // El margen superior de 100px
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+        </script>
+
+        <div class="whatsapp-button2">
+            <a href="https://wa.me/+541130354095?text=." target="_blank">
+                <img src="assets/images/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
 
 
         <!-- main-header end -->
 
         <!-- Mobile Menu  -->
-        <div class="mobile-menu" >
+        <div class="mobile-menu">
             <div class="menu-backdrop"></div>
             <div class="close-btn"><i class="fas fa-times"></i></div>
 
@@ -199,7 +201,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                         <li><a href="mailto:info@example.com">info@mymail.com</a></li>
                     </ul>
                 </div>
-            
+
             </nav>
         </div><!-- End Mobile Menu -->
 
@@ -217,12 +219,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                         <div class="inner-box">
                             <div class="image-box">
 
-                                <figure class="image image-2"><img src="assets/images/banner/vector-2.png" alt="">
+                                <figure class="image image-2"><img src="assets/images/5.jpeg" alt=""
+                                        style="border-radius: 25px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);">
+
                                 </figure>
                             </div>
                             <div class="content-box">
-                                <h2>SERVICIOS</h2>
-                                <p>Limpieza de cañerías · Pluviales · Acometidas domiciliarias · Acequias · Redes
+                                <h2>SERVICIOS DE <br> DESOBSTRUCCIÓN AVANZADA</h2>
+                                <p>Limpieza de cañerías · Pluviales · Acometidas domiciliarias · <br>Acequias · Redes
                                     secundarias.</p>
                                 <div class="btn-box clearfix">
                                     <a href="" class="theme-btn btn-one">WhatsApp</a>
@@ -250,11 +254,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                 <div class="inner-box">
                                     <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);">
                                     </div>
-                                    <div class="icon-box"><i class="flaticon-water-drop-1"></i></div>
-                                    <h4>Servicio de Destapaciones</h4>
-                                    <p>Destapaciones en San Isidro, Martinez, Olivos, Vicente Lopez, Villa Adelina,
-                                        Beccar, Acassuso, La Florida, Boulogne, Tigre, Benavidez, Nordelta, Islas del
-                                        delta, y muchos barrios más.</p>
+                                    <div class="icon-box">
+                                        <img src="assets/images/6.png" alt="Icono de servicio" width="120" height="120">
+                                    </div>
+                                    <h4>Servicios de Desobstrucción
+                                        Avanzada</h4>
+                                    <p>Utilizamos el equipo HJ-200 para desobstruir y limpiar cañerías, pluviales y
+                                        acometidas domiciliarias. Podemos trabajar a más de 100 metros de distancia y
+                                        aplicamos agua a alta presión para garantizar una limpieza profunda y eficaz,
+                                        ideal para prevenir y solucionar atascos complejos.</p>
                                 </div>
                             </div>
                         </div>
@@ -263,21 +271,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                 <div class="inner-box">
                                     <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);">
                                     </div>
-                                    <div class="icon-box"><i class="flaticon-recycle"></i></div>
-                                    <h4>Destapaciones con máquina</h4>
-                                    <p>Trabajamos con máquina eléctrica de 1 hp con resortes acerados con diferentes
-                                        elementos para desobstruir cañerías con raíces, grasa y papel entre otras cosas.
+                                    <div class="icon-box">
+                                        <div >
+                                            <img src="assets/images/img-1.jpg" alt="Icono de servicio" width="140"
+                                                height="140">
+                                        </div>
+                                    </div>
+
+                                    <h4 class="shadow-container">Mantenimiento de Instalaciones
+                                        Domiciliarias e Industriales</h4>
+                                    <p >Con el equipo C-300 limpiamos cañerías de hasta Ø200 mm en instalaciones
+                                        residenciales e industriales. Este equipo portátil permite acceder a espacios
+                                        reducidos, asegurando una limpieza detallada y mejorando la eficiencia de los
+                                        sistemas de plomería.
                                     </p>
                                 </div>
                             </div>
                         </div>
+                        <style>
+                            .shadow-container {
+                                margin-top: -10px;
+                            }
+                            @media (max-width:786px){
+                                .shadow-container {
+                                margin-top: 0px;
+                            } 
+                            }
+                            
+                        </style>
                         <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
                             <div class="feature-block-one">
                                 <div class="inner-box">
-                                    <div class="icon-box"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                                    <h4>Destapaciones de urgencia las 24 horas</h4>
-                                    <p>Líderes en el servicio de destapaciones de cañerías pluviales y cloacales.
-                                        Destapaciones de urgencia en zona norte.</p>
+                                    <div class="icon-box">
+                                        <img src="assets/images/4.png" alt="Icono de servicio" width="120" height="120">
+                                    </div>
+                                    <h4>Limpieza de Tubos de Pequeño
+                                        y Mediano Diámetro</h4>
+                                    <p>Ofrecemos limpieza especializada para tuberías de Ø19 a 110 mm usando el equipo K
+                                        60 Full. Este servicio es ideal para tuberías con codos complicados,
+                                        manteniéndolas libres de obstrucciones en aplicaciones diversas, desde
+                                        mantenimiento preventivo hasta solución de problemas.</p>
                                 </div>
                             </div>
                         </div>
@@ -327,10 +360,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                         soluciones duraderas en instalaciones de cualquier tipo, ya sean residenciales,
                                         comerciales o industriales.</p>
                                 </div>
-                                <div class="btn-box mt-auto">
-                                    <a href="about.html" class="theme-btn btn-one" style="margin-top: 50px;">Leer
-                                        más</a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -358,23 +388,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                         <div class="content_block_2">
                             <div class="content-box">
                                 <div class="sec-title light">
-                                    <h2>Un titulo llamativo de lo que hace esa maquina</h2>
+                                    <h2>Desobstrucción y limpieza eficiente para redes extensas</h2>
                                 </div>
                                 <div class="inner-box">
                                     <div class="single-item">
                                         <div class="icon-box"><i class="flaticon-draw-check-mark"></i></div>
                                         <div class="text">
-                                            <h4>Titulo</h4>
-                                            <p>Lorem ipsum dolor amet consectetur adipisicing sed do eiusmod tempor
-                                                incididunt labore.</p>
+                                            <h4>Limpieza a alta presión para caños de gran longitud </h4>
+                                            <p>Servicio de limpieza y desobstrucción utilizando agua a alta presión, lo
+                                                que nos permite alcanzar y limpiar cañerías a distancias de más de 100
+                                                metros.</p>
                                         </div>
                                     </div>
                                     <div class="single-item">
                                         <div class="icon-box"><i class="flaticon-draw-check-mark"></i></div>
                                         <div class="text">
-                                            <h4>Titulo</h4>
-                                            <p>Lorem ipsum dolor amet consectetur adipisicing sed do eiusmod tempor
-                                                incididunt labore.</p>
+                                            <h4>Soluciones para atascos complejos</h4>
+                                            <p>Ideal para prevenir y solucionar obstrucciones en redes pluviales,
+                                                acometidas domiciliarias y acequias.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -384,7 +415,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                         <div class="image-box wow fadeInRight animated" data-wow-delay="00ms"
                             data-wow-duration="1500ms">
-                            <figure class="image"><img src="assets/images/WhatsApp Image 2024-07-29 at 13.35.17.jpeg" alt=""></figure>
+                            <figure class="image"><img src="assets/images/WhatsApp Image 2024-07-29 at 13.35.17.jpeg"
+                                    alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -402,13 +434,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 <div class="row clearfix">
                     <!-- Primera fila de 3 servicios -->
                     <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
-                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="00ms"
+                            data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/resource/close-up-of-professional-plumber-installs-a-siphon-2024-08-08-07-18-52-utc.jpg" alt=""></figure>
+                                <figure class="image-box"><img
+                                        src="assets/images/resource/close-up-of-professional-plumber-installs-a-siphon-2024-08-08-07-18-52-utc.jpg"
+                                        alt=""></figure>
                                 <div class="lower-content">
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);">
+                                    </div>
                                     <h4>Destapación de cañerias</h4>
-                                    <p>Destapación de columnas de desague de cocinas, lavaderos y baños. Destapaciones de cañerías en hogares y cualquier lugar.</p>
+                                    <p>Destapación de columnas de desague de cocinas, lavaderos y baños. Destapaciones
+                                        de cañerías en hogares y cualquier lugar.</p>
                                     <div class="btn-box">
                                         <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
                                     </div>
@@ -416,15 +453,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
-                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="300ms"
+                            data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/resource/male-plumber-hands-repairing-sink-in-bathroom-2023-11-27-05-30-39-utc.jpg" alt=""></figure>
+                                <figure class="image-box"><img
+                                        src="assets/images/resource/male-plumber-hands-repairing-sink-in-bathroom-2023-11-27-05-30-39-utc.jpg"
+                                        alt=""></figure>
                                 <div class="lower-content">
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);">
+                                    </div>
                                     <h4>Destapación de baños</h4>
-                                    <p>Destapaciones de baños e inodoros de baños, caños de desague de piletas del baño, lavamanos, bidets, bañeras y bañaderas.</p>
+                                    <p>Destapaciones de baños e inodoros de baños, caños de desague de piletas del baño,
+                                        lavamanos, bidets, bañeras y bañaderas.</p>
                                     <div class="btn-box">
                                         <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
                                     </div>
@@ -432,15 +474,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
-                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="600ms"
+                            data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/resource/plumber-fixing-leaking-sink-2023-11-27-05-10-17-utc.jpg" alt=""></figure>
+                                <figure class="image-box"><img
+                                        src="assets/images/resource/plumber-fixing-leaking-sink-2023-11-27-05-10-17-utc.jpg"
+                                        alt=""></figure>
                                 <div class="lower-content">
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);">
+                                    </div>
                                     <h4>Destapación de cocinas</h4>
-                                    <p>Desobstrucción y destapaciones de caños de desague de cocinas y lavaderos, destapación de rejillas en cocinas, patios y lavaderos.</p>
+                                    <p>Desobstrucción y destapaciones de caños de desague de cocinas y lavaderos,
+                                        destapación de rejillas en cocinas, patios y lavaderos.</p>
                                     <div class="btn-box">
                                         <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
                                     </div>
@@ -449,17 +496,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Segunda fila de 3 servicios con margen superior diferente en PC y móvil -->
                 <div class="row clearfix mt-lg-5 mt-sm-3">
                     <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
-                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="900ms" data-wow-duration="1500ms">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="900ms"
+                            data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/resource/WhatsApp Image 2024-07-29 at 13.35.17 (1).jpeg" alt=""></figure>
+                                <figure class="image-box"><img
+                                        src="assets/images/resource/WhatsApp Image 2024-07-29 at 13.35.17 (1).jpeg"
+                                        alt=""></figure>
                                 <div class="lower-content">
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);">
+                                    </div>
                                     <h4>Limpieza de cañerias</h4>
-                                    <p>Realizamos limpieza, desobstrucción y cepillado de cañerias, eliminación de obstrucciones en cañerías.</p>
+                                    <p>Realizamos limpieza, desobstrucción y cepillado de cañerias, eliminación de
+                                        obstrucciones en cañerías.</p>
                                     <div class="btn-box">
                                         <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
                                     </div>
@@ -467,15 +519,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
-                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="1200ms" data-wow-duration="1500ms">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="1200ms"
+                            data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/resource/cleaning-the-sewer-system-special-equipment-utili-2023-11-27-05-22-33-utc.jpg" alt=""></figure>
+                                <figure class="image-box"><img
+                                        src="assets/images/resource/cleaning-the-sewer-system-special-equipment-utili-2023-11-27-05-22-33-utc.jpg"
+                                        alt=""></figure>
                                 <div class="lower-content">
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);">
+                                    </div>
                                     <h4>Destapación de cloacas</h4>
-                                    <p>Realizamos destapaciones de cloacas, caños cloacales, cámaras de cloacas y columnas cloacales internas.</p>
+                                    <p>Realizamos destapaciones de cloacas, caños cloacales, cámaras de cloacas y
+                                        columnas cloacales internas.</p>
                                     <div class="btn-box">
                                         <a href="https://web.whatsapp.com/" class="theme-btn btn-two">Contactar</a>
                                     </div>
@@ -483,13 +540,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
-                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="1500ms" data-wow-duration="1500ms">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="1500ms"
+                            data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/resource/male-plumber-installing-heating-radiator-in-apartm-2023-11-27-05-31-44-utc.jpg" alt=""></figure>
+                                <figure class="image-box"><img
+                                        src="assets/images/resource/male-plumber-installing-heating-radiator-in-apartm-2023-11-27-05-31-44-utc.jpg"
+                                        alt=""></figure>
                                 <div class="lower-content">
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);">
+                                    </div>
                                     <h4>Destapaciones de urgencia</h4>
                                     <p>Destapaciones las 24 horas, los 365 días del año.</p>
                                     <div class="btn-box">
@@ -502,8 +563,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 </div>
             </div>
         </section>
-        
-   
+
+
         <!-- shop-section end -->
 
 
@@ -520,8 +581,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 <div class="two-column-carousel owl-carousel owl-theme owl-nav-none">
                     <div class="testimonial-block-one">
                         <div class="inner-box">
-                           
-                            
+
+
                             <div class="inner">
                                 <ul class="rating clearfix">
                                     <li><i class="fas fa-star"></i></li>
@@ -530,16 +591,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                     <li><i class="fas fa-star"></i></li>
                                     <li><i class="fas fa-star"></i></li>
                                 </ul>
-                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
-                                    minim veniam.</p>
-                                <h5>Nombre y apellido</h5>
-                              
+                                <p>"La verdad, impecables. Me solucionaron el quilombo de las cañerías en un toque. Muy
+                                    profesionales y laburan con una máquina que hace todo más rápido. Recomendadísimos."
+                                </p>
+                                <h5>Juan Pérez</h5>
+
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-block-one">
                         <div class="inner-box">
-                           
+
                             <div class="inner">
                                 <ul class="rating clearfix">
                                     <li><i class="fas fa-star"></i></li>
@@ -548,16 +610,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                     <li><i class="fas fa-star"></i></li>
                                     <li><i class="fas fa-star"></i></li>
                                 </ul>
-                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
-                                    minim veniam.</p>
-                                    <h5>Nombre y apellido</h5>
-                               
+                                <p>"Tenía una obstrucción tremenda en el desagüe del patio. Vinieron rápido, hicieron el
+                                    laburo y quedó todo perfecto. No los cambio por nada."</p>
+                                <h5>Ana González</h5>
+
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-block-one">
                         <div class="inner-box">
-                            
+
                             <div class="inner">
                                 <ul class="rating clearfix">
                                     <li><i class="fas fa-star"></i></li>
@@ -566,15 +628,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                     <li><i class="fas fa-star"></i></li>
                                     <li><i class="fas fa-star"></i></li>
                                 </ul>
-                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
-                                    minim veniam.</p>
-                                    <h5>Nombre y apellido</h5>
+                                <p>"No sabía cómo resolver el problema en las cañerías. Esta gente vino con su equipo y
+                                    lo dejaron como nuevo en nada de tiempo. <br>¡Grosos!"</p>
+                                <h5>Carlos Martínez</h5>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-block-one">
                         <div class="inner-box">
-                            
+
                             <div class="inner">
                                 <ul class="rating clearfix">
                                     <li><i class="fas fa-star"></i></li>
@@ -583,15 +645,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                     <li><i class="fas fa-star"></i></li>
                                     <li><i class="fas fa-star"></i></li>
                                 </ul>
-                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
-                                    minim veniam.</p>
-                                    <h5>Nombre y apellido</h5>
+                                <p>"Me salvaron con un taponazo en la cañería que ningún plomero podía arreglar. Muy
+                                    buen servicio, y el precio súper razonable para lo que hicieron."</p>
+                                <h5>María López</h5>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-block-one">
                         <div class="inner-box">
-                          
+
                             <div class="inner">
                                 <ul class="rating clearfix">
                                     <li><i class="fas fa-star"></i></li>
@@ -600,15 +662,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                     <li><i class="fas fa-star"></i></li>
                                     <li><i class="fas fa-star"></i></li>
                                 </ul>
-                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
-                                    minim veniam.</p>
-                                    <h5>Nombre y apellido</h5>
+                                <p>"Todo diez puntos. Vinieron, hicieron lo que tenían que hacer y se fueron en un
+                                    ratito. Quedó todo joya, ya no tengo más problemas de obstrucción."</p>
+                                <h5>Lucía Fernández</h5>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-block-one">
                         <div class="inner-box">
-                           
+
                             <div class="inner">
                                 <ul class="rating clearfix">
                                     <li><i class="fas fa-star"></i></li>
@@ -617,9 +679,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                     <li><i class="fas fa-star"></i></li>
                                     <li><i class="fas fa-star"></i></li>
                                 </ul>
-                                <p>Lorem ipsum dolor amet consectur adicing elit sed do usmod tempor incididunt enim ad
-                                    minim veniam.</p>
-                                    <h5>Nombre y apellido</h5>
+                                <p>"Tenía el local tapado y no podía laburar. Por suerte me recomendaron este servicio y
+                                    me sacaron del apuro en un día. <br>¡Gracias, chicos!"</p>
+                                <h5>Federico Romero</h5>
                             </div>
                         </div>
                     </div>
@@ -629,61 +691,65 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         <!-- testimonial-section end -->
 
 
-   
-   <!-- faq-page-section -->
-<section class="faq-page-section">
-    <div class="auto-container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
-                <div class="faq-content">
-                    <div class="sec-title text-center">
-                        <h2>Preguntas Frecuentes</h2>
+
+        <!-- faq-page-section -->
+        <section class="faq-page-section">
+            <div class="auto-container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
+                        <div class="faq-content">
+                            <div class="sec-title text-center">
+                                <h2>Preguntas Frecuentes</h2>
+                            </div>
+                            <ul class="accordion-box">
+                                <li class="accordion block active-block">
+                                    <div class="acc-btn active">
+                                        <div class="icon-outer"><i class="fal fa-plus"></i></div>
+                                        <h4>¿Qué servicios ofrecemos?</h4>
+                                    </div>
+                                    <div class="acc-content current">
+                                        <div class="text">
+                                            <p>Ofrecemos los mejores servicios de destapaciones y plomería en toda Zona
+                                                Norte, trabajando con maquinaria de última tecnología y con el mejor
+                                                equipo de profesionales especializados en el rubro. </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"><i class="fal fa-plus"></i></div>
+                                        <h4>¿Qué medios de pago aceptan?</h4>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="text">
+                                            <p>Aceptamos una gran variedad de medios de pago, desde efectivo y
+                                                transferencia bancaria hasta MercadoPago. </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"><i class="fal fa-plus"></i></div>
+                                        <h4>¿Cómo puedo solicitar un presupuesto?</h4>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="text">
+                                            <p>Nos pueden enviar mensaje por WhatsApp o mediante el Formulario de
+                                                Contacto.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="accordion-box">
-                        <li class="accordion block active-block">
-                            <div class="acc-btn active">
-                                <div class="icon-outer"><i class="fal fa-plus"></i></div>
-                                <h4>¿Qué servicios ofrecemos?</h4>
-                            </div>
-                            <div class="acc-content current">
-                                <div class="text">
-                                    <p>Ofrecemos los mejores servicios de destapaciones y plomería en toda Zona Norte, trabajando con maquinaria de última tecnología y con el mejor equipo de profesionales especializados en el rubro. </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="accordion block">
-                            <div class="acc-btn">
-                                <div class="icon-outer"><i class="fal fa-plus"></i></div>
-                                <h4>¿Qué medios de pago aceptan?</h4>
-                            </div>
-                            <div class="acc-content">
-                                <div class="text">
-                                    <p>Aceptamos una gran variedad de medios de pago, desde efectivo y transferencia bancaria hasta MercadoPago. </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="accordion block">
-                             <div class="acc-btn">
-                                <div class="icon-outer"><i class="fal fa-plus"></i></div>
-                                <h4>¿Cómo puedo solicitar un presupuesto?</h4>
-                            </div>
-                            <div class="acc-content">
-                                <div class="text">
-                                    <p>Nos pueden enviar mensaje por WhatsApp o mediante el Formulario de Contacto.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-    
+        </section>
 
 
-    
+
+
+
         <!-- contact-style-two -->
         <section class="contact-style-two" id="contact">
             <div class="auto-container">
@@ -701,12 +767,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                 <li>
                                     <i class="fas fa-envelope-open"></i>
                                     <h5>Email</h5>
-                                    <p><a href="mailto:info@example.com">info@example.com</a><br /><a href="mailto:information@gmail.com">information@gmail.com</a></p>
+                                    <p><a href="mailto:info@example.com">info@example.com</a><br /><a
+                                            href="mailto:information@gmail.com">information@gmail.com</a></p>
                                 </li>
                                 <li>
                                     <i class="fas fa-phone"></i>
                                     <h5>Telefono</h5>
-                                    <p><a href="tel:11165458856">+(111) 65_458_856</a><br /><a href="tel:11165458857">+(111) 65_458_857</a></p>
+                                    <p><a href="tel:11165458856">+(111) 65_458_856</a><br /><a
+                                            href="tel:11165458857">+(111) 65_458_857</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -714,7 +782,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                     <div class="col-lg-7 col-md-12 col-sm-12 form-column">
                         <div class="form-inner">
                             <h3>Contactate con nosotros</h3>
-                            <form method="post" action="sendemail.php" id="contact-form" class="default-form"> 
+                            <form method="post" action="sendemail.php" id="contact-form" class="default-form">
                                 <div class="row clearfix">
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                         <input type="text" name="name" placeholder="nombre" required="">
@@ -725,12 +793,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                     <div class="col-lg-6 col-md-12 col-sm-12 form-group">
                                         <input type="text" name="phone" required="" placeholder="Telefono">
                                     </div>
-                                   
+
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                         <textarea name="message" placeholder="Mensaje"></textarea>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                        <button class="theme-btn btn-one" type="submit" name="submit-form">Enviar</button>
+                                        <button class="theme-btn btn-one" type="submit"
+                                            name="submit-form">Enviar</button>
                                     </div>
                                 </div>
                             </form>
@@ -744,63 +813,82 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         <!-- main-footer -->
         <footer class="main-footer">
             <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-12.png);"></div>
-                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-13.png);"></div>
-                <div class="pattern-3" style="background-image: url(assets/images/shape/shape-14.png);"></div>
+
+                <div class="pattern-3" style="background-image: url(assets/images/shape/shape-1.png);"></div>
             </div>
             <div class="auto-container">
-                <div class="footer-top clearfix">
+                <div
+                    class="footer-top clearfix d-flex flex-column align-items-center justify-content-center text-center">
                     <div class="line-shape" style="background-image: url(assets/images/shape/shape-11.png);"></div>
-                    <div class="text pull-left">
-                        <h2>Ante cualquier consulta puede comunicarse  llamando al</h2>
+                    <div class="text">
+                        <h2>Ante cualquier consulta podés comunicarte llamando al</h2>
                     </div>
-                    <div class="support-box pull-right">
-                        <a href="tel:1141609950"><i class="fas fa-phone"></i>(11) 4160-9950</a>
+                    <br><br>
+                    <div class="support-box mt-auto">
+                        <a href="tel:1141609950" class="btn-call"><i class="fas fa-phone"></i>(11) 4160-9950</a>
                     </div>
                 </div>
+
                 <div class="widget-section">
                     <div class="row d-flex justify-content-between align-items-center clearfix">
                         <!-- Logo y descripción a la izquierda -->
-                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/Logo/Logo Horizontal.png" alt="Logo"></a></figure>
-                               
-                                <div class="schedule-box">
-                                    <h6>Horarios:</h6>
-                                    <ul class="list clearfix">
-                                        <li>Lunes - Sabados: 9AM - 6PM.</li>
-                                        <li>Domingo: Cerrado</li>
-                                    </ul>
-                                </div>
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/Logo/logo.png"
+                                            alt="Logo"></a></figure>
                             </div>
                         </div>
-                
+
                         <!-- Información de contacto a la derecha -->
-                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column ml-auto">
                             <div class="footer-widget contact-widget">
                                 <div class="widget-title">
                                     <h4>Info</h4>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="info-list clearfix">
-                                        <li><i class="fal fa-map-marker-alt"></i>Avenida 9 de Julio, Buenos Aires</li>
-                                        <li><i class="fal fa-phone"></i>Llamar: <a href="tel:3336660001">333-666-0001</a></li>
-                                        <li><i class="fal fa-envelope-open-text"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                                        <li><i class="fal fa-map-marker-alt"
+                                                style="font-size: 25px;margin-top: -7px;"></i>Avenida 9 de Julio, Buenos
+                                            Aires</li>
+                                        <li><i class="fal fa-phone"></i>Llamar: <a
+                                                href="tel:3336660001">333-666-0001</a></li>
+                                        <li><i class="fal fa-envelope-open-text"></i><a
+                                                href="mailto:info@example.com">info@example.com</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <style>
+                    .footer-logo img {
+
+                        margin-bottom: -100px;
+                        /* Ajusta este valor para bajar el logo */
+                    }
+
+                    @media (max-width: 786px) {
+                        .footer-widget.logo-widget {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .footer-logo img {
+                            max-width: 250px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                </style>
             </div>
             <div class="footer-bottom">
                 <div class="auto-container">
                     <div class="bottom-inner">
                         <div class="copyright">
-                            <p><a href="index.html"></a> Copyright &copy; 2024 CLEAN PIPE</p>
+                            <p><a href="index.html"></a> Copyright &copy; 2024 CLEAN PIPES</p>
                         </div>
-                     
-                        
+
+
                     </div>
                 </div>
             </div>

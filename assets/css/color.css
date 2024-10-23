@@ -5,7 +5,7 @@
 }
 
 .handle-preloader{
-	background-color: #002c8f;
+	background-color: #379ecf;
 }
 
 .preloader-close{
@@ -13,11 +13,11 @@
 }
 
 .theme-btn.btn-one{
-	background-color: #00d1f9;
+	background-color: #71c7ee;
 }
 
 .theme-btn:before{
-	background-color: #002c8f;
+	background-color: #379ecf;
 }
 
 .main-header .nav-right .cart-box a span{
@@ -25,16 +25,16 @@
 }
 
 .main-header .search-box-btn:hover{
-  color: #00d1f9;
+  color: #71c7ee;
 }
 
 .main-header .nav-right .cart-box a:hover{
-  color: #00d1f9;
+  color: #71c7ee;
 }
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li:hover > a{
-  color: #00d1f9;
+  color: #000000;
 }
 
 .main-menu .navigation > li > ul > li > a:hover,
@@ -67,23 +67,23 @@
 }
 
 .content_block_2 .content-box .single-item .icon-box{
-	background-color: #00d1f9;
+	background-color: #71c7ee;
 }
 
 .theme-btn.btn-two:before{
-  background-color: #00d1f9;
+  background-color: #71c7ee;
 }
 
 .theme-btn.btn-two:hover{
-	border-color: #00d1f9;
+	border-color: #71c7ee;
 }
 
 .shop-block-one .inner-box .lower-content h4 a:hover{
-  color: #00d1f9;
+  color: #71c7ee;
 }
 
 .shop-block-one .inner-box .lower-content h6{
-	color: #00d1f9;
+	color: #71c7ee;
 }
 
 .testimonial-block-one .inner-box .rating li{
@@ -132,7 +132,7 @@
 }
 
 .main-footer .footer-top .support-box a{
-	background-color: #00d1f9;
+	background-color: #71c7ee;
 }
 
 .main-footer .contact-widget .info-list li a:hover{
@@ -140,7 +140,7 @@
 }
 
 .main-footer .contact-widget .info-list li i{
-	color: #00d1f9;
+	color: #71c7ee;
 }
 
 .main-footer .links-widget .links-list li a:hover{
@@ -239,7 +239,11 @@
 }
 
 .accordion-box .block .acc-btn.active h4{
-  background-color: #00d1f9;
+	position: relative;
+	background-image: url('../images/Trama\ en\ negro\ Celeste.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen */
+	background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+	background-position: center; /* Centra la imagen en el contenedor */
+	background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .faq-sidebar .form-inner form .form-group input:focus,
@@ -387,7 +391,7 @@
 }
 
 .contact-style-two .info-list li i{
-	color: #00d1f9;
+	color: #71c7ee;
 }
 
 .contact-style-two .info-list li p a:hover{
