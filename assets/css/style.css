@@ -1659,6 +1659,12 @@ div#mCSB_1_container{
   transition: all 1000ms ease;
 }
 
+@media (max-width:500px){
+  .banner-carousel .content-box p{
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}}
 .banner-carousel .active .content-box p{
   font-family: 'Archivo_Condensed-Medium';
   opacity: 1;

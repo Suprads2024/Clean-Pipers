@@ -372,7 +372,7 @@
   }
 
   .banner-carousel .content-box h2 {
-    margin-bottom: 30px;
+ 
     font-size: 29px;
     line-height: 44px;
   }
@@ -819,9 +819,15 @@
   }
 
 }
-
+@media only screen and (max-width: 415px) {
+  .banner-carousel .content-box {
+    padding: 100px 0px 200px 0px;
+  }}
 
 @media only screen and (max-width: 399px) {
+  .banner-carousel .content-box {
+    padding: 80px 0px 200px 0px;
+  }
 
   .banner-carousel .content-box .btn-box .theme-btn.btn-one {
     margin-bottom: 10px;
