@@ -174,7 +174,7 @@ body {
   max-width:1200px;
   padding:0px 15px;
   margin:0 auto;
-  margin-bottom: 100px;
+
 }
 
 .small-container{
@@ -231,7 +231,7 @@ textarea:focus{
 
 p{
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Archivo_Condensed-Regular';
   color: #808080;
   font-weight: 400;
   margin: 0px;
@@ -240,7 +240,7 @@ p{
 
 h1,h2,h3,h4,h5,h6{
   position:relative;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Archivo_Condensed-Bold';
   font-weight: 400;
   color: #3c3c3b;
   margin: 0px;
@@ -883,10 +883,12 @@ img {
 }
 
 .main-menu .navigation{
+  
   margin:0px;
 }
 
 .main-menu .navigation > li{
+  
   position:inherit;
   float:left;
   z-index:2;
@@ -907,13 +909,14 @@ img {
 }
 
 .main-menu .navigation > li > a{
+  font-family: 'Archivo_Condensed-Bold';
   position:relative;
   display:block;
   text-align:center;
-  font-size:16px;
+  font-size:20px;
   line-height:30px;
   padding: 42px 0px;
-  font-family: 'Open Sans', sans-serif;
+
   font-weight:700;
   opacity:1;
   color: #379ecf;
@@ -1611,6 +1614,7 @@ div#mCSB_1_container{
 }
 
 .banner-carousel .active .content-box p{
+  font-family: 'Archivo_Condensed-Medium';
   opacity: 1;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -1806,6 +1810,7 @@ div#mCSB_1_container{
   padding: 75px 50px 73px 50px;
   box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
   margin-top: -100px;
+  margin-bottom: 100px;
   z-index: 2;
 }
 
@@ -1840,14 +1845,14 @@ div#mCSB_1_container{
 
 .feature-block-one .inner-box h4{
   display: block;
-  font-size: 20px;
+  font-size: 23px;
   line-height: 30px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
 .feature-block-one .inner-box p{
-  font-size: 15px;
+  font-size: 16px;
   line-height: 26px;
 }
 
@@ -1889,7 +1894,12 @@ div#mCSB_1_container{
 }
 
 .content_block_1 .content-box .text p{
+  font-size: 16px;
   margin-bottom: 26px;
+}
+
+.text2{
+  font-size: 16px;
 }
 
 .content_block_1 .content-box .text p:last-child{
@@ -2351,6 +2361,7 @@ div#mCSB_1_container{
 }
 
 .testimonial-block-one .inner-box p{
+  font-size: 16px;
   color: #222222;
   margin-bottom: 20px;
 }
@@ -4771,7 +4782,7 @@ div#mCSB_1_container{
 }
 
 .accordion-box .block .acc-content p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 28px;
   margin-bottom: 24px;
 }
@@ -4779,7 +4790,7 @@ div#mCSB_1_container{
 .accordion-box .block .acc-content .list li{
   position: relative;
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   color: #172746;
   padding-left: 20px;
   margin-bottom: 10px;
