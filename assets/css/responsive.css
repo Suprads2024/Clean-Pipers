@@ -39,6 +39,7 @@
   }
 
   .menu-area .mobile-nav-toggler {
+    margin-top: -55px;
     display: block;
     padding: 10px;
   }
@@ -371,6 +372,7 @@
   }
 
   .banner-carousel .content-box h2 {
+    margin-bottom: 30px;
     font-size: 29px;
     line-height: 44px;
   }
@@ -647,9 +649,7 @@
     display: block;
   }
 
-  .main-header .logo-box .logo {
-    margin: 0 auto;
-  }
+ 
 
   .main-header .nav-right {
     position: absolute;
@@ -753,6 +753,7 @@
 }
 
 
+
 @media only screen and (max-width: 499px) {
 
   .mobile-menu {
@@ -840,7 +841,9 @@
 }
 @media only screen and (max-width: 376px) {
 
- 
+  .banner-carousel .content-box {
+    padding:0px;
+  }
   .banner-carousel .content-box h2 {
     font-size: 26px;
     line-height: 44px;

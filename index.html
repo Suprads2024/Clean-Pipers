@@ -103,17 +103,26 @@
                 <!-- <div class="shape" style="background-image: url(assets/images/shape/shape-4.png);"></div> -->
                 <div class="outer-box">
                     <div class="logo-box">
-                        <figure class="logo"><a href="./"><img src="assets/images/Logo/Logo Horizontal.png"
-                                    alt="Logo"></a></figure>
+                        <!-- Logo para pantallas grandes -->
+                        <figure class="logo desktop-logo">
+                            <a href="./"><img src="assets/images/Logo/Logo Horizontal.png" alt="Logo"></a>
+                        </figure>
+
+                        <!-- Logo para pantallas móviles -->
+                        <figure class="logo mobile-logo">
+                            <a href="./"><img src="assets/images/Logo/Logo-web.png" alt="Logo móvil"></a>
+                        </figure>
+
                     </div>
+
                     <div class="menu-area clearfix">
+
                         <!--Mobile Navigation Toggler-->
                         <div class="mobile-nav-toggler">
                             <i class="icon-bar"></i>
                             <i class="icon-bar"></i>
                             <i class="icon-bar"></i>
                         </div>
-
                         <nav class="main-menu navbar-expand-md navbar-light">
 
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
@@ -196,7 +205,7 @@
                 <div class="contact-info">
                     <h4>Info</h4>
                     <ul>
-                        
+
                         <li><a href=""> 000 - 1234123 / 0000 21 8888</a></li>
                         <li><a href="mail:Cleanpipessolutions@gmail.com">Cleanpipessolutions@gmail.com</a></li>
                     </ul>
@@ -226,8 +235,12 @@
                             </div>
                             <div class="content-box">
                                 <h2>SERVICIOS DE <br> DESOBSTRUCCIÓN AVANZADA</h2>
-                                <p>Limpieza de cañerías · Pluviales · Acometidas domiciliarias · <br>Acequias · Redes
-                                    secundarias.</p>
+                                
+                                <!-- Imagen centrada en móviles y oculta en pantallas grandes -->
+                                <img class="responsive-img" src="assets/images/5.jpeg" alt="Imagen de servicio"
+                                     style="border-radius: 25px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);">
+                                
+                                <p>Limpieza de cañerías · Pluviales · Acometidas domiciliarias · <br>Acequias · Redes secundarias.</p>
                                 <div class="btn-box clearfix">
                                     <a href="" class="theme-btn btn-one">WhatsApp</a>
                                     <a href="#contact" class="theme-btn banner-btn">Contacto</a>
@@ -272,7 +285,7 @@
                                     <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);">
                                     </div>
                                     <div class="icon-box">
-                                        <div >
+                                        <div>
                                             <img src="assets/images/img-1.jpg" alt="Icono de servicio" width="140"
                                                 height="140">
                                         </div>
@@ -280,7 +293,7 @@
 
                                     <h4 class="shadow-container">Mantenimiento de Instalaciones
                                         Domiciliarias e Industriales</h4>
-                                    <p >Con el equipo C-300 limpiamos cañerías de hasta Ø200 mm en instalaciones
+                                    <p>Con el equipo C-300 limpiamos cañerías de hasta Ø200 mm en instalaciones
                                         residenciales e industriales. Este equipo portátil permite acceder a espacios
                                         reducidos, asegurando una limpieza detallada y mejorando la eficiencia de los
                                         sistemas de plomería.
@@ -292,12 +305,12 @@
                             .shadow-container {
                                 margin-top: -10px;
                             }
-                            @media (max-width:786px){
+
+                            @media (max-width:786px) {
                                 .shadow-container {
-                                margin-top: 0px;
-                            } 
+                                    margin-top: 0px;
+                                }
                             }
-                            
                         </style>
                         <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
                             <div class="feature-block-one">
@@ -322,7 +335,7 @@
         <!-- feature-section end -->
 
 
-      
+
 
 
 
@@ -401,8 +414,9 @@
                                     <p>Destapación de columnas de desague de cocinas, lavaderos y baños. Destapaciones
                                         de cañerías en hogares y cualquier lugar.</p>
                                     <div class="btn-box">
-                                       
-                                <a href="https://wa.me/1141609950?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20destapaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas."  class="theme-btn btn-two" target="_blank">Contactar</a>
+
+                                        <a href="https://wa.me/1141609950?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20destapaci%C3%B3n%20de%20ca%C3%B1er%C3%ADas."
+                                            class="theme-btn btn-two" target="_blank">Contactar</a>
                                     </div>
                                 </div>
                             </div>
@@ -423,7 +437,8 @@
                                     <p>Destapaciones de baños e inodoros de baños, caños de desague de piletas del baño,
                                         lavamanos, bidets, bañeras y bañaderas.</p>
                                     <div class="btn-box">
-                                        <a href="https://wa.me/1141609950?text=Hola%2C%20quisiera%20consultar%20sobre%20el%20servicio%20de%20destapaci%C3%B3n%20de%20ba%C3%B1os." class="theme-btn btn-two" target="_blank">Contactar</a>
+                                        <a href="https://wa.me/1141609950?text=Hola%2C%20quisiera%20consultar%20sobre%20el%20servicio%20de%20destapaci%C3%B3n%20de%20ba%C3%B1os."
+                                            class="theme-btn btn-two" target="_blank">Contactar</a>
                                     </div>
                                 </div>
                             </div>
@@ -444,7 +459,8 @@
                                     <p>Desobstrucción y destapaciones de caños de desague de cocinas y lavaderos,
                                         destapación de rejillas en cocinas, patios y lavaderos.</p>
                                     <div class="btn-box">
-                                        <a href="https://wa.me/1141609950?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20destapaci%C3%B3n%20de%20cocinas." class="theme-btn btn-two" target="_blank">Contactar</a>
+                                        <a href="https://wa.me/1141609950?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20destapaci%C3%B3n%20de%20cocinas."
+                                            class="theme-btn btn-two" target="_blank">Contactar</a>
                                     </div>
                                 </div>
                             </div>
@@ -468,7 +484,8 @@
                                     <p>Realizamos limpieza, desobstrucción y cepillado de cañerias, eliminación de
                                         obstrucciones en cañerías.</p>
                                     <div class="btn-box">
-                                        <a href="https://wa.me/1141609950?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20limpieza%20de%20ca%C3%B1er%C3%ADas." class="theme-btn btn-two" target="_blank">Contactar</a>
+                                        <a href="https://wa.me/1141609950?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20limpieza%20de%20ca%C3%B1er%C3%ADas."
+                                            class="theme-btn btn-two" target="_blank">Contactar</a>
                                     </div>
                                 </div>
                             </div>
@@ -489,7 +506,8 @@
                                     <p>Destapaciones de cloacas, caños cloacales, cámaras de cloacas y
                                         columnas cloacales internas.</p>
                                     <div class="btn-box">
-                                        <a href="https://wa.me/1141609950?text=Hola%2C%20quisiera%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20destapaci%C3%B3n%20de%20cloacas." class="theme-btn btn-two" target="_blank">Contactar</a>
+                                        <a href="https://wa.me/1141609950?text=Hola%2C%20quisiera%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20destapaci%C3%B3n%20de%20cloacas."
+                                            class="theme-btn btn-two" target="_blank">Contactar</a>
                                     </div>
                                 </div>
                             </div>
@@ -509,7 +527,8 @@
                                     <h4>Destapaciones de urgencia</h4>
                                     <p>Destapaciones las 24 horas, <br> los 365 días del año.</p>
                                     <div class="btn-box">
-                                        <a href="https://wa.me/1141609950?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20destapaciones%20de%20urgencia." class="theme-btn btn-two" target="_blank">Contactar</a>
+                                        <a href="https://wa.me/1141609950?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20destapaciones%20de%20urgencia."
+                                            class="theme-btn btn-two" target="_blank">Contactar</a>
                                     </div>
                                 </div>
                             </div>
@@ -702,53 +721,53 @@
         </section>
 
 
-  <!-- about-section -->
-  <section class="about-section" id="about">
-    <div class="auto-container">
-        <div class="row d-flex align-items-start clearfix">
-            <!-- Columna izquierda -->
-            <div class="col-lg-6 col-md-6 col-sm-12 content-column">
-                <div class="content_block_1 h-100 d-flex flex-column">
-                    <div class="content-box wow fadeInRight animated" data-wow-delay="00ms"
-                        data-wow-duration="1500ms">
-                        <div class="sec-title">
-                            <h2>Sobre Nosotros</h2>
-                        </div>
-                        <div class="text">
-                            <p>Clean Pipe Solutions es una empresa líder en el sector de servicios de limpieza y
-                                mantenimiento de tuberías, especializada en ofrecer soluciones integrales para
-                                la desobstrucción y limpieza de conductos utilizando tecnología de punta. Con un
-                                enfoque en la eficiencia y la calidad, nuestra empresa se destaca por el uso de
-                                maquinaria avanzada y camiones equipados específicamente para el manejo de todo
-                                tipo de obstrucciones y limpiezas profundas.</p>
-                        </div>
+        <!-- about-section -->
+        <section class="about-section" id="about">
+            <div class="auto-container">
+                <div class="row d-flex align-items-start clearfix">
+                    <!-- Columna izquierda -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                        <div class="content_block_1 h-100 d-flex flex-column">
+                            <div class="content-box wow fadeInRight animated" data-wow-delay="00ms"
+                                data-wow-duration="1500ms">
+                                <div class="sec-title">
+                                    <h2>Sobre Nosotros</h2>
+                                </div>
+                                <div class="text">
+                                    <p>Clean Pipe Solutions es una empresa líder en el sector de servicios de limpieza y
+                                        mantenimiento de tuberías, especializada en ofrecer soluciones integrales para
+                                        la desobstrucción y limpieza de conductos utilizando tecnología de punta. Con un
+                                        enfoque en la eficiencia y la calidad, nuestra empresa se destaca por el uso de
+                                        maquinaria avanzada y camiones equipados específicamente para el manejo de todo
+                                        tipo de obstrucciones y limpiezas profundas.</p>
+                                </div>
 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha (ajustando margen superior solo en pantallas grandes) -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 content-column mt-lg-4 mt-0">
+                        <div class="content_block_2 h-100 d-flex flex-column">
+                            <div class="content-box wow fadeInRight animated" data-wow-delay="00ms"
+                                data-wow-duration="1500ms">
+                                <div class="text2">
+                                    <p>Nuestro equipo de profesionales altamente capacitados está comprometido con la
+                                        excelencia en el servicio, asegurando intervenciones rápidas, efectivas y
+                                        mínimamente invasivas. Entendemos la importancia de mantener en funcionamiento
+                                        las tuberías sin interrupciones, por lo que ofrecemos respuestas rápidas y
+                                        soluciones duraderas en instalaciones de cualquier tipo, ya sean residenciales,
+                                        comerciales o industriales.</p>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Columna derecha (ajustando margen superior solo en pantallas grandes) -->
-            <div class="col-lg-6 col-md-6 col-sm-12 content-column mt-lg-4 mt-0">
-                <div class="content_block_2 h-100 d-flex flex-column">
-                    <div class="content-box wow fadeInRight animated" data-wow-delay="00ms"
-                        data-wow-duration="1500ms">
-                        <div class="text2">
-                            <p>Nuestro equipo de profesionales altamente capacitados está comprometido con la
-                                excelencia en el servicio, asegurando intervenciones rápidas, efectivas y
-                                mínimamente invasivas. Entendemos la importancia de mantener en funcionamiento
-                                las tuberías sin interrupciones, por lo que ofrecemos respuestas rápidas y
-                                soluciones duraderas en instalaciones de cualquier tipo, ya sean residenciales,
-                                comerciales o industriales.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-</section>
+        </section>
 
 
-<!-- about-section end -->
+        <!-- about-section end -->
 
 
         <!-- contact-style-two -->
@@ -760,11 +779,12 @@
                             <div class="shape" style="background-image: url(assets/images/shape/shape-42.png);"></div>
                             <h3>Contacto</h3>
                             <ul class="info-list clearfix">
-                             
+
                                 <li>
                                     <i class="fas fa-envelope-open"></i>
                                     <h5>Email</h5>
-                                    <p><a href="mailto:Cleanpipessolutions@gmail.com">Cleanpipessolutions@gmail.com</a></p>
+                                    <p><a href="mailto:Cleanpipessolutions@gmail.com">Cleanpipessolutions@gmail.com</a>
+                                    </p>
                                 </li>
                                 <li>
                                     <i class="fas fa-phone"></i>
@@ -842,9 +862,9 @@
                                 </div>
                                 <div class="widget-content">
                                     <ul class="info-list clearfix">
-                                        
-                                        <li><i class="fal fa-phone"></i>Llamar: <a
-                                                href="tel:1130354095">1130354095</a></li>
+
+                                        <li><i class="fal fa-phone"></i>Llamar: <a href="tel:1130354095">1130354095</a>
+                                        </li>
                                         <li><i class="fal fa-envelope-open-text"></i><a
                                                 href="">Cleanpipessolutions@gmail.com</a></li>
                                     </ul>

@@ -678,7 +678,28 @@ img {
 .main-header .logo-box .logo img{
   width: 100%;
 }
+/* Mostrar solo el logo de escritorio por defecto */
+.desktop-logo {
+  display: block;
+}
 
+.mobile-logo {
+  display: none;
+}
+
+/* Mostrar solo el logo de móvil en pantallas pequeñas */
+@media (max-width: 768px) {
+  .desktop-logo {
+      display: none;
+  }
+  .main-header .logo-box{
+    position: relative;
+    padding: 0px 0px;
+  }
+  .mobile-logo {
+      display: block;
+  }
+}
 @media (max-width:786px){
   .main-header .logo-box .logo img{
     width: 250px;
@@ -1564,7 +1585,7 @@ div#mCSB_1_container{
   font-size: 50px;
   line-height: 66px;
   font-weight: 800;
-  margin-bottom: 23px;
+
   opacity: 0;
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
@@ -1577,7 +1598,32 @@ div#mCSB_1_container{
   -o-transition: all 1000ms ease;
   transition: all 1000ms ease;
 }
+/* Estilos por defecto para pantallas móviles */
+.responsive-img {
+  display: block; /* Asegura que la imagen sea un bloque */
+  margin: 20px auto; /* Centra la imagen y añade espacio superior/inferior */
+  width: 80%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+  max-width: 300px; /* Tamaño máximo de la imagen */
+}/* Ocultar la imagen por defecto */
+.responsive-img {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: all 0.3s ease; /* Transición suave cuando aparezca */
+}
 
+/* Mostrar la imagen cuando el ancho sea mayor a 500px */
+@media (max-width: 500px) {
+  .responsive-img {
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+      margin: 20px auto; /* Centra la imagen en pantallas medianas */
+      width: 80%; /* Ajusta el tamaño de la imagen */
+      max-width: 300px; /* Tamaño máximo de la imagen */
+      transition: all 0.3s ease; /* Transición suave */
+  }
+}
 .banner-carousel .active .content-box h2{
   font-family: 'Archivo_Condensed-ExtraBold';
   opacity: 1;
@@ -1812,6 +1858,15 @@ div#mCSB_1_container{
   margin-top: -100px;
   margin-bottom: 100px;
   z-index: 2;
+}
+
+@media (max-width:376px){
+  
+.feature-section .inner-container{
+
+  margin-top: -10px;
+  
+}
 }
 
 .feature-section .title-text{
@@ -3274,6 +3329,7 @@ div#mCSB_1_container{
 .banner-style-two .banner-carousel .content-box .btn-box .banner-btn:before{
 
 }
+
 
 .banner-style-two .image-box .image{
   position: absolute;
