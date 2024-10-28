@@ -420,6 +420,7 @@ img {
   vertical-align: middle;
   font-size: 17px;
   line-height: 25px;
+  margin-right: 15px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   text-align: center;
@@ -432,7 +433,9 @@ img {
 .theme-btn.btn-one{
   color: #fff !important;
 }
-
+.theme-btn.btn-one .banner-btn{
+  color: #fff;
+}
 .theme-btn:before{
   webkit-transition-duration: 800ms;
   transition-duration: 800ms;
@@ -1717,7 +1720,7 @@ div#mCSB_1_container{
 
 }
 
-.banner-carousel .content-box .btn-box .banner-btn{
+.banner-btn{
   border: 3px solid rgba(255, 255, 255, 0.15);
   background: transparent;
   color: #fff !important;
@@ -1856,6 +1859,7 @@ div#mCSB_1_container{
 }
 
 .feature-section .inner-container{
+  border-radius: 50px;
   position: relative;
   display: block;
   background-color: #fff;
@@ -7520,4 +7524,109 @@ div#mCSB_1_container{
 
 .shop-details .product-discription .tabs-content .customer-comments{
   padding-left: 0px;
+}
+
+.banner-section-2 {
+  position: relative;
+  padding: 60px 20px 120px; /* Más padding inferior para evitar que la imagen se mezcle con la siguiente sección */
+  background-color: #1d96d1;
+  color: #fff;
+}
+
+/* Ajuste de márgenes entre el texto y la imagen */
+.inner-box-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Ajusta la distancia entre el texto y la imagen */
+}
+
+.content-box-2 {
+  max-width: 50%;
+}
+.content-box-2 h2{
+  font-size: 40px;
+  color: white;
+}
+.content-box-2 p{
+  font-size: 20px;
+  color: white;
+  margin: 20px 0px;
+}
+.image-box-2 {
+  flex-shrink: 0;
+}
+
+/* Margen inferior para asegurar que la imagen no se superponga con la siguiente sección */
+.banner-image-desktop{
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  max-width: 100%;
+  margin-bottom: 30px; /* Aumenta el margen inferior */
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+  .banner-section-2 {
+    position: relative;
+    padding: 60px 20px 60px; /* Más padding inferior para evitar que la imagen se mezcle con la siguiente sección */
+    background-color: #1d96d1;
+    color: #fff;
+  }
+  .inner-box-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .content-box-2 h2{
+    font-size: 25px;
+  }
+  .content-box-2 p{
+    font-size: 16px;
+  }
+  .content-box-2 {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+  .theme-btn{
+    margin-right: 0px;
+    font-size: 15px;
+  }
+  .image-box-2 {
+      order: 1; /* Coloca la imagen justo después del título */
+      margin: 20px 0; /* Espacio entre la imagen y los demás elementos */
+  }
+
+  .banner-image-2 {
+      max-width: 80%;
+  }
+
+  .btn-box {
+      margin-top: 20px; /* Añade espacio entre el párrafo y los botones */
+
+      gap: 10px;
+  }
+}/* Estilos para la versión móvil */
+@media (max-width: 768px) {
+  .banner-image-desktop {
+      display: none; /* Oculta la imagen de escritorio en móvil */
+  }
+  .banner-image-mobile {
+      display: block; /* Muestra la imagen solo en móvil */
+      margin: 20px auto;
+      max-width: 80%;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  }
+}
+
+/* Estilos para la versión de escritorio */
+@media (min-width: 769px) {
+  .banner-image-desktop {
+      display: block; /* Muestra la imagen de escritorio */
+  }
+  .banner-image-mobile {
+      display: none; /* Oculta la imagen solo para escritorio */
+  }
 }
